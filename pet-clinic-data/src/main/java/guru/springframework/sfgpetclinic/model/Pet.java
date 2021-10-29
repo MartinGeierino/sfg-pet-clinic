@@ -21,6 +21,7 @@ public class Pet extends BaseEntity {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
+
     public String getName() {
         return name;
     }
