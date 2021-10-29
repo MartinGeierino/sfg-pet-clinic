@@ -76,6 +76,7 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner1);
 
+
         Owner owner2 = new Owner();
         owner2.setId(2L);
         owner2.setFirstName("Fiona");
@@ -92,11 +93,14 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
+
         Visit catVisit = new Visit();
         catVisit.setPet(fionasPet);
         catVisit.setDate(LocalDate.now());
         catVisit.setDescription("Sneezy Kitty");
+
         visitService.save(catVisit);
+
 
         System.out.println("Loaded Owners...");
 
